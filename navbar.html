@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar task</title>
+    <style>
+        ul {
+            margin: 0px;
+            padding: 10px;
+            background-color: black;
+            display: flex;
+        }
+
+        ul .x {
+            list-style: none;
+            display: inline;
+            margin: 0px 10px;
+        }
+
+        ul a{
+            text-decoration: none;
+            color: grey;
+        }
+
+        
+        .x .y {
+            
+            display: none;
+            
+        }
+
+        ul .x:hover .y { 
+            display: block;
+            background-color: lightgrey;
+            padding: 5px 20px;
+            color: black;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="x"><a href="#">Home</a></li>
+        <li class="x"><a href="#">Features</a></li>
+        <li class="x"><a href="#">Portfolio</a></li>
+
+        <li class="x"><a href="#">Blog</a>
+            <ul>
+                <li class="y"><a href="#">Large Image</a></li>
+                <li class="y"><a href="#">Medium Image</a></li>
+                <li class="y"><a href="#">Masony</a></li>
+                <li class="y"><a href="#">Pages</a></li>
+            </ul>
+        
+        </li>
+
+        <li class="x"><a href="#">Contact</a></li>
+    </ul>
+    
+</body>
+</html>
